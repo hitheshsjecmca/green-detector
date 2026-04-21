@@ -26,7 +26,7 @@ while True:
 
     final = cv2.add(person, bg)
 
-    cv2.imshow("Final Output", final)
+    cv2.imshow("FINAL OUTPUT", final)
 
     if cv2.waitKey(1) == 27:
         break
