@@ -11,11 +11,11 @@ while True:
     if not ret:
         break
 
-    frame = cv2.resize(frame, (640, 480))
+    frame=cv2.resize(frame, (640, 480))
 
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-    lower_green = np.array([36, 44, 40])
+    lower_green = np.array([37, 54, 40])
     upper_green = np.array([84, 256, 255])
 
     mask = cv2.inRange(hsv, lower_green, upper_green)
